@@ -13,6 +13,7 @@ This project is a simple implementation of the classic Pacman game using Java's 
 - Collision detection between Pacman and ghosts.
 - Food pellet collection and score tracking.
 - Automatic game reset upon collision with ghosts.
+  ![Screenshot 2024-12-22 214223](https://github.com/user-attachments/assets/df6a3cd0-7937-4bd2-a0c0-27b545403735)
 
 ## Requirements
 - Java Development Kit (JDK) 8 or later.
