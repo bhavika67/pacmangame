@@ -34,6 +34,13 @@
                 updateVelocity();
                 this.x += this.velocityX;
                 this.y += this.velocityY;
+                 // Boundary check for Pac-Man and Ghosts
+               if (this.x < 0) this.x = boardWidth - tileSize; // Wrap around left edge
+               if (this.x >= boardWidth) this.x = 0; // Wrap around right edge
+               if (this.y < 0) this.y = 0; // Prevent going above top edge
+               if (this.y >= boardHeight) this.y = boardHeight - tileSize; // Prevent going below bottom edge
+
+
                 for (Block wall : walls) {
                     if (collision(this, wall)) {
                         this.x -= this.velocityX;
